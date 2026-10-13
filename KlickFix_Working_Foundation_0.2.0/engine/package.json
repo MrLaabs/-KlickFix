@@ -1,0 +1,8 @@
+{
+  "name": "klick-fix-diagnostic-engine",
+  "private": true,
+  "scripts": {
+    "test": "node tests/diagnosticEngine.test.js && node tests/adaptiveEngine.test.js && node tests/fuzz.test.js && node tests/session.test.js && node tests/v3.test.js && node tests/v3_1.test.js && node tests/v3_2.test.js && node tests/v3_2_fuzz.test.js && node tests/v3_3.test.js && node tests/v3_4.test.js && node tests/v3_5.test.js && node tests/v3_6.test.js && node tests/v4.test.js && node tests/v4_1_4_4.test.js && node tests/productionArchitecture.test.js"
+  },
+  "version": "0.2.0-safety-gate-hardening"
+}

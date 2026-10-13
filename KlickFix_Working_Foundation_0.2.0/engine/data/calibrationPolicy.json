@@ -1,0 +1,16 @@
+{
+  "version": "3.6.0",
+  "principle": "verified_outcomes_only",
+  "defaultPriorMean": 0.5,
+  "defaultPriorStrength": 20,
+  "minimumFailureModeOutcomes": 30,
+  "minimumProbabilityBinOutcomes": 10,
+  "probabilityBins": 10,
+  "excludedOutcomeSources": ["customer_guess"],
+  "requiredVerificationStatus": "verified",
+  "requiredRepairStatus": "completed",
+  "duplicateKey": "predictionId",
+  "metrics": ["brierScore", "logLoss", "reliabilityBins"],
+  "safetyRule": "calibration_never_overrides_safety_hard_stops",
+  "partsRule": "calibration_never_establishes_part_compatibility"
+}

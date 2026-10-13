@@ -1,0 +1,5215 @@
+{
+  "version": "3.2.0",
+  "nodes": [
+    {
+      "id": "failure:dryer_heating_element",
+      "type": "failure",
+      "label": "Heating element",
+      "applianceType": "dryer",
+      "system": "heat",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::heating_element",
+      "type": "component",
+      "label": "Heating element"
+    },
+    {
+      "id": "system::heat",
+      "type": "system",
+      "label": "heat"
+    },
+    {
+      "id": "symptom::no_heat",
+      "type": "symptom",
+      "label": "no heat"
+    },
+    {
+      "id": "symptom::long_dry_time",
+      "type": "symptom",
+      "label": "long dry time"
+    },
+    {
+      "id": "evidence::heater_glows",
+      "type": "evidence",
+      "label": "heater_glows"
+    },
+    {
+      "id": "evidence::heater_glows:yes",
+      "type": "observation",
+      "label": "heater_glows = yes",
+      "key": "heater_glows",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::heater_glows:no",
+      "type": "observation",
+      "label": "heater_glows = no",
+      "key": "heater_glows",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::airflow_strong",
+      "type": "evidence",
+      "label": "airflow_strong"
+    },
+    {
+      "id": "evidence::airflow_strong:yes",
+      "type": "observation",
+      "label": "airflow_strong = yes",
+      "key": "airflow_strong",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::airflow_strong:no",
+      "type": "observation",
+      "label": "airflow_strong = no",
+      "key": "airflow_strong",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::element_continuity",
+      "type": "evidence",
+      "label": "element_continuity"
+    },
+    {
+      "id": "evidence::element_continuity:yes",
+      "type": "observation",
+      "label": "element_continuity = yes",
+      "key": "element_continuity",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::element_continuity:no",
+      "type": "observation",
+      "label": "element_continuity = no",
+      "key": "element_continuity",
+      "answer": "no"
+    },
+    {
+      "id": "test::continuity_test",
+      "type": "test",
+      "label": "continuity_test"
+    },
+    {
+      "id": "test::voltage_to_heater",
+      "type": "test",
+      "label": "voltage_to_heater"
+    },
+    {
+      "id": "failure:dryer_thermal_cutoff",
+      "type": "failure",
+      "label": "Thermal cutoff / thermal fuse",
+      "applianceType": "dryer",
+      "system": "heat",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::thermal_cutoff_thermal_fuse",
+      "type": "component",
+      "label": "Thermal cutoff / thermal fuse"
+    },
+    {
+      "id": "symptom::overheats",
+      "type": "symptom",
+      "label": "overheats"
+    },
+    {
+      "id": "evidence::thermal_cutoff_open",
+      "type": "evidence",
+      "label": "thermal_cutoff_open"
+    },
+    {
+      "id": "evidence::thermal_cutoff_open:yes",
+      "type": "observation",
+      "label": "thermal_cutoff_open = yes",
+      "key": "thermal_cutoff_open",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::thermal_cutoff_open:no",
+      "type": "observation",
+      "label": "thermal_cutoff_open = no",
+      "key": "thermal_cutoff_open",
+      "answer": "no"
+    },
+    {
+      "id": "failure:dryer_high_limit_thermostat",
+      "type": "failure",
+      "label": "High-limit thermostat",
+      "applianceType": "dryer",
+      "system": "heat",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::high_limit_thermostat",
+      "type": "component",
+      "label": "High-limit thermostat"
+    },
+    {
+      "id": "evidence::high_limit_open",
+      "type": "evidence",
+      "label": "high_limit_open"
+    },
+    {
+      "id": "evidence::high_limit_open:yes",
+      "type": "observation",
+      "label": "high_limit_open = yes",
+      "key": "high_limit_open",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::high_limit_open:no",
+      "type": "observation",
+      "label": "high_limit_open = no",
+      "key": "high_limit_open",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::overheats",
+      "type": "evidence",
+      "label": "overheats"
+    },
+    {
+      "id": "evidence::overheats:yes",
+      "type": "observation",
+      "label": "overheats = yes",
+      "key": "overheats",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::overheats:no",
+      "type": "observation",
+      "label": "overheats = no",
+      "key": "overheats",
+      "answer": "no"
+    },
+    {
+      "id": "test::thermostat_continuity_test",
+      "type": "test",
+      "label": "thermostat_continuity_test"
+    },
+    {
+      "id": "failure:dryer_cycling_thermostat",
+      "type": "failure",
+      "label": "Cycling thermostat",
+      "applianceType": "dryer",
+      "system": "heat",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::cycling_thermostat",
+      "type": "component",
+      "label": "Cycling thermostat"
+    },
+    {
+      "id": "evidence::temperature_cycles",
+      "type": "evidence",
+      "label": "temperature_cycles"
+    },
+    {
+      "id": "evidence::temperature_cycles:yes",
+      "type": "observation",
+      "label": "temperature_cycles = yes",
+      "key": "temperature_cycles",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::temperature_cycles:no",
+      "type": "observation",
+      "label": "temperature_cycles = no",
+      "key": "temperature_cycles",
+      "answer": "no"
+    },
+    {
+      "id": "test::temperature_cycle_check",
+      "type": "test",
+      "label": "temperature_cycle_check"
+    },
+    {
+      "id": "failure:dryer_vent_restriction",
+      "type": "failure",
+      "label": "Vent restriction / airflow path",
+      "applianceType": "dryer",
+      "system": "airflow",
+      "safetyRisk": "fire"
+    },
+    {
+      "id": "component::vent_restriction_airflow_path",
+      "type": "component",
+      "label": "Vent restriction / airflow path"
+    },
+    {
+      "id": "system::airflow",
+      "type": "system",
+      "label": "airflow"
+    },
+    {
+      "id": "evidence::outside_flap_opens",
+      "type": "evidence",
+      "label": "outside_flap_opens"
+    },
+    {
+      "id": "evidence::outside_flap_opens:yes",
+      "type": "observation",
+      "label": "outside_flap_opens = yes",
+      "key": "outside_flap_opens",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::outside_flap_opens:no",
+      "type": "observation",
+      "label": "outside_flap_opens = no",
+      "key": "outside_flap_opens",
+      "answer": "no"
+    },
+    {
+      "id": "test::airflow_check",
+      "type": "test",
+      "label": "airflow_check"
+    },
+    {
+      "id": "failure:dryer_motor_switch",
+      "type": "failure",
+      "label": "Motor / centrifugal switch",
+      "applianceType": "dryer",
+      "system": "motor",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::motor_centrifugal_switch",
+      "type": "component",
+      "label": "Motor / centrifugal switch"
+    },
+    {
+      "id": "system::motor",
+      "type": "system",
+      "label": "motor"
+    },
+    {
+      "id": "symptom::wont_start",
+      "type": "symptom",
+      "label": "wont_start"
+    },
+    {
+      "id": "evidence::motor_runs",
+      "type": "evidence",
+      "label": "motor_runs"
+    },
+    {
+      "id": "evidence::motor_runs:yes",
+      "type": "observation",
+      "label": "motor_runs = yes",
+      "key": "motor_runs",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::motor_runs:no",
+      "type": "observation",
+      "label": "motor_runs = no",
+      "key": "motor_runs",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::drum_turns",
+      "type": "evidence",
+      "label": "drum_turns"
+    },
+    {
+      "id": "evidence::drum_turns:yes",
+      "type": "observation",
+      "label": "drum_turns = yes",
+      "key": "drum_turns",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::drum_turns:no",
+      "type": "observation",
+      "label": "drum_turns = no",
+      "key": "drum_turns",
+      "answer": "no"
+    },
+    {
+      "id": "test::motor_operation_check",
+      "type": "test",
+      "label": "motor_operation_check"
+    },
+    {
+      "id": "failure:dryer_terminal_block",
+      "type": "failure",
+      "label": "Terminal block / power connection",
+      "applianceType": "dryer",
+      "system": "power",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::terminal_block_power_connection",
+      "type": "component",
+      "label": "Terminal block / power connection"
+    },
+    {
+      "id": "system::power",
+      "type": "system",
+      "label": "power"
+    },
+    {
+      "id": "evidence::voltage_present",
+      "type": "evidence",
+      "label": "voltage_present"
+    },
+    {
+      "id": "evidence::voltage_present:yes",
+      "type": "observation",
+      "label": "voltage_present = yes",
+      "key": "voltage_present",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::voltage_present:no",
+      "type": "observation",
+      "label": "voltage_present = no",
+      "key": "voltage_present",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::burning_smell",
+      "type": "evidence",
+      "label": "burning_smell"
+    },
+    {
+      "id": "evidence::burning_smell:yes",
+      "type": "observation",
+      "label": "burning_smell = yes",
+      "key": "burning_smell",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::burning_smell:no",
+      "type": "observation",
+      "label": "burning_smell = no",
+      "key": "burning_smell",
+      "answer": "no"
+    },
+    {
+      "id": "test::supply_voltage_check",
+      "type": "test",
+      "label": "supply_voltage_check"
+    },
+    {
+      "id": "failure:dryer_gas_igniter",
+      "type": "failure",
+      "label": "Gas igniter",
+      "applianceType": "dryer",
+      "system": "gas",
+      "safetyRisk": "gas"
+    },
+    {
+      "id": "component::gas_igniter",
+      "type": "component",
+      "label": "Gas igniter"
+    },
+    {
+      "id": "system::gas",
+      "type": "system",
+      "label": "gas"
+    },
+    {
+      "id": "evidence::igniter_glows",
+      "type": "evidence",
+      "label": "igniter_glows"
+    },
+    {
+      "id": "evidence::igniter_glows:yes",
+      "type": "observation",
+      "label": "igniter_glows = yes",
+      "key": "igniter_glows",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::igniter_glows:no",
+      "type": "observation",
+      "label": "igniter_glows = no",
+      "key": "igniter_glows",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::gas_flame",
+      "type": "evidence",
+      "label": "gas_flame"
+    },
+    {
+      "id": "evidence::gas_flame:yes",
+      "type": "observation",
+      "label": "gas_flame = yes",
+      "key": "gas_flame",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::gas_flame:no",
+      "type": "observation",
+      "label": "gas_flame = no",
+      "key": "gas_flame",
+      "answer": "no"
+    },
+    {
+      "id": "test::igniter_observation",
+      "type": "test",
+      "label": "igniter_observation"
+    },
+    {
+      "id": "test::igniter_test",
+      "type": "test",
+      "label": "igniter_test"
+    },
+    {
+      "id": "failure:dryer_gas_coils",
+      "type": "failure",
+      "label": "Gas valve coils",
+      "applianceType": "dryer",
+      "system": "gas",
+      "safetyRisk": "gas"
+    },
+    {
+      "id": "component::gas_valve_coils",
+      "type": "component",
+      "label": "Gas valve coils"
+    },
+    {
+      "id": "evidence::flame_starts_then_stops",
+      "type": "evidence",
+      "label": "flame_starts_then_stops"
+    },
+    {
+      "id": "evidence::flame_starts_then_stops:yes",
+      "type": "observation",
+      "label": "flame_starts_then_stops = yes",
+      "key": "flame_starts_then_stops",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::flame_starts_then_stops:no",
+      "type": "observation",
+      "label": "flame_starts_then_stops = no",
+      "key": "flame_starts_then_stops",
+      "answer": "no"
+    },
+    {
+      "id": "test::flame_cycle_observation",
+      "type": "test",
+      "label": "flame_cycle_observation"
+    },
+    {
+      "id": "failure:dryer_flame_sensor",
+      "type": "failure",
+      "label": "Flame sensor",
+      "applianceType": "dryer",
+      "system": "gas",
+      "safetyRisk": "gas"
+    },
+    {
+      "id": "component::flame_sensor",
+      "type": "component",
+      "label": "Flame sensor"
+    },
+    {
+      "id": "test::flame_sensor_test",
+      "type": "test",
+      "label": "flame_sensor_test"
+    },
+    {
+      "id": "failure:dryer_blower_wheel",
+      "type": "failure",
+      "label": "Blower wheel / airflow assembly",
+      "applianceType": "dryer",
+      "system": "airflow",
+      "safetyRisk": "mechanical"
+    },
+    {
+      "id": "component::blower_wheel_airflow_assembly",
+      "type": "component",
+      "label": "Blower wheel / airflow assembly"
+    },
+    {
+      "id": "symptom::noise",
+      "type": "symptom",
+      "label": "noise"
+    },
+    {
+      "id": "evidence::rattling_noise",
+      "type": "evidence",
+      "label": "rattling_noise"
+    },
+    {
+      "id": "evidence::rattling_noise:yes",
+      "type": "observation",
+      "label": "rattling_noise = yes",
+      "key": "rattling_noise",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::rattling_noise:no",
+      "type": "observation",
+      "label": "rattling_noise = no",
+      "key": "rattling_noise",
+      "answer": "no"
+    },
+    {
+      "id": "test::blower_inspection",
+      "type": "test",
+      "label": "blower_inspection"
+    },
+    {
+      "id": "failure:refrigerator_evaporator_fan",
+      "type": "failure",
+      "label": "Evaporator fan motor/circuit",
+      "applianceType": "refrigerator",
+      "system": "airflow",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::evaporator_fan_motor_circuit",
+      "type": "component",
+      "label": "Evaporator fan motor/circuit"
+    },
+    {
+      "id": "symptom::not_cooling",
+      "type": "symptom",
+      "label": "not cooling"
+    },
+    {
+      "id": "evidence::freezer_cold",
+      "type": "evidence",
+      "label": "freezer_cold"
+    },
+    {
+      "id": "evidence::freezer_cold:yes",
+      "type": "observation",
+      "label": "freezer_cold = yes",
+      "key": "freezer_cold",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::freezer_cold:no",
+      "type": "observation",
+      "label": "freezer_cold = no",
+      "key": "freezer_cold",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::evaporator_fan",
+      "type": "evidence",
+      "label": "evaporator_fan"
+    },
+    {
+      "id": "evidence::evaporator_fan:yes",
+      "type": "observation",
+      "label": "evaporator_fan = yes",
+      "key": "evaporator_fan",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::evaporator_fan:no",
+      "type": "observation",
+      "label": "evaporator_fan = no",
+      "key": "evaporator_fan",
+      "answer": "no"
+    },
+    {
+      "id": "test::fan_observation",
+      "type": "test",
+      "label": "fan_observation"
+    },
+    {
+      "id": "test::wiring_check",
+      "type": "test",
+      "label": "wiring_check"
+    },
+    {
+      "id": "failure:refrigerator_condenser_fan",
+      "type": "failure",
+      "label": "Condenser fan motor/circuit",
+      "applianceType": "refrigerator",
+      "system": "cooling",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::condenser_fan_motor_circuit",
+      "type": "component",
+      "label": "Condenser fan motor/circuit"
+    },
+    {
+      "id": "system::cooling",
+      "type": "system",
+      "label": "cooling"
+    },
+    {
+      "id": "evidence::condenser_fan",
+      "type": "evidence",
+      "label": "condenser_fan"
+    },
+    {
+      "id": "evidence::condenser_fan:yes",
+      "type": "observation",
+      "label": "condenser_fan = yes",
+      "key": "condenser_fan",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::condenser_fan:no",
+      "type": "observation",
+      "label": "condenser_fan = no",
+      "key": "condenser_fan",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::compressor_running",
+      "type": "evidence",
+      "label": "compressor_running"
+    },
+    {
+      "id": "evidence::compressor_running:yes",
+      "type": "observation",
+      "label": "compressor_running = yes",
+      "key": "compressor_running",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::compressor_running:no",
+      "type": "observation",
+      "label": "compressor_running = no",
+      "key": "compressor_running",
+      "answer": "no"
+    },
+    {
+      "id": "failure:refrigerator_defrost_system",
+      "type": "failure",
+      "label": "Defrost system",
+      "applianceType": "refrigerator",
+      "system": "defrost",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::defrost_system",
+      "type": "component",
+      "label": "Defrost system"
+    },
+    {
+      "id": "system::defrost",
+      "type": "system",
+      "label": "defrost"
+    },
+    {
+      "id": "evidence::heavy_frost",
+      "type": "evidence",
+      "label": "heavy_frost"
+    },
+    {
+      "id": "evidence::heavy_frost:yes",
+      "type": "observation",
+      "label": "heavy_frost = yes",
+      "key": "heavy_frost",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::heavy_frost:no",
+      "type": "observation",
+      "label": "heavy_frost = no",
+      "key": "heavy_frost",
+      "answer": "no"
+    },
+    {
+      "id": "test::frost_pattern_check",
+      "type": "test",
+      "label": "frost_pattern_check"
+    },
+    {
+      "id": "test::heater_continuity",
+      "type": "test",
+      "label": "heater_continuity"
+    },
+    {
+      "id": "failure:refrigerator_start_device",
+      "type": "failure",
+      "label": "Compressor start device/overload",
+      "applianceType": "refrigerator",
+      "system": "cooling",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::compressor_start_device_overload",
+      "type": "component",
+      "label": "Compressor start device/overload"
+    },
+    {
+      "id": "evidence::clicking",
+      "type": "evidence",
+      "label": "clicking"
+    },
+    {
+      "id": "evidence::clicking:yes",
+      "type": "observation",
+      "label": "clicking = yes",
+      "key": "clicking",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::clicking:no",
+      "type": "observation",
+      "label": "clicking = no",
+      "key": "clicking",
+      "answer": "no"
+    },
+    {
+      "id": "test::start_device_test",
+      "type": "test",
+      "label": "start_device_test"
+    },
+    {
+      "id": "failure:refrigerator_compressor",
+      "type": "failure",
+      "label": "Compressor",
+      "applianceType": "refrigerator",
+      "system": "cooling",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::compressor",
+      "type": "component",
+      "label": "Compressor"
+    },
+    {
+      "id": "evidence::high_temperature",
+      "type": "evidence",
+      "label": "high_temperature"
+    },
+    {
+      "id": "evidence::high_temperature:yes",
+      "type": "observation",
+      "label": "high_temperature = yes",
+      "key": "high_temperature",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::high_temperature:no",
+      "type": "observation",
+      "label": "high_temperature = no",
+      "key": "high_temperature",
+      "answer": "no"
+    },
+    {
+      "id": "test::compressor_electrical_test",
+      "type": "test",
+      "label": "compressor_electrical_test"
+    },
+    {
+      "id": "test::sealed_system_evaluation",
+      "type": "test",
+      "label": "sealed_system_evaluation"
+    },
+    {
+      "id": "failure:refrigerator_condenser_coils",
+      "type": "failure",
+      "label": "Condenser coil airflow/soil",
+      "applianceType": "refrigerator",
+      "system": "cooling",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::condenser_coil_airflow_soil",
+      "type": "component",
+      "label": "Condenser coil airflow/soil"
+    },
+    {
+      "id": "evidence::dirty_coils",
+      "type": "evidence",
+      "label": "dirty_coils"
+    },
+    {
+      "id": "evidence::dirty_coils:yes",
+      "type": "observation",
+      "label": "dirty_coils = yes",
+      "key": "dirty_coils",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::dirty_coils:no",
+      "type": "observation",
+      "label": "dirty_coils = no",
+      "key": "dirty_coils",
+      "answer": "no"
+    },
+    {
+      "id": "test::coil_inspection",
+      "type": "test",
+      "label": "coil_inspection"
+    },
+    {
+      "id": "failure:refrigerator_damper",
+      "type": "failure",
+      "label": "Air damper / diffuser",
+      "applianceType": "refrigerator",
+      "system": "airflow",
+      "safetyRisk": "mechanical"
+    },
+    {
+      "id": "component::air_damper_diffuser",
+      "type": "component",
+      "label": "Air damper / diffuser"
+    },
+    {
+      "id": "evidence::fresh_food_airflow",
+      "type": "evidence",
+      "label": "fresh_food_airflow"
+    },
+    {
+      "id": "evidence::fresh_food_airflow:yes",
+      "type": "observation",
+      "label": "fresh_food_airflow = yes",
+      "key": "fresh_food_airflow",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::fresh_food_airflow:no",
+      "type": "observation",
+      "label": "fresh_food_airflow = no",
+      "key": "fresh_food_airflow",
+      "answer": "no"
+    },
+    {
+      "id": "test::airflow_observation",
+      "type": "test",
+      "label": "airflow_observation"
+    },
+    {
+      "id": "test::damper_test",
+      "type": "test",
+      "label": "damper_test"
+    },
+    {
+      "id": "failure:refrigerator_thermistor",
+      "type": "failure",
+      "label": "Temperature sensor / thermistor",
+      "applianceType": "refrigerator",
+      "system": "controls",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::temperature_sensor_thermistor",
+      "type": "component",
+      "label": "Temperature sensor / thermistor"
+    },
+    {
+      "id": "system::controls",
+      "type": "system",
+      "label": "controls"
+    },
+    {
+      "id": "evidence::temperature_reading_wrong",
+      "type": "evidence",
+      "label": "temperature_reading_wrong"
+    },
+    {
+      "id": "evidence::temperature_reading_wrong:yes",
+      "type": "observation",
+      "label": "temperature_reading_wrong = yes",
+      "key": "temperature_reading_wrong",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::temperature_reading_wrong:no",
+      "type": "observation",
+      "label": "temperature_reading_wrong = no",
+      "key": "temperature_reading_wrong",
+      "answer": "no"
+    },
+    {
+      "id": "test::sensor_resistance_test",
+      "type": "test",
+      "label": "sensor_resistance_test"
+    },
+    {
+      "id": "failure:refrigerator_water_inlet_valve",
+      "type": "failure",
+      "label": "Water inlet valve",
+      "applianceType": "refrigerator",
+      "system": "water",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "component::water_inlet_valve",
+      "type": "component",
+      "label": "Water inlet valve"
+    },
+    {
+      "id": "system::water",
+      "type": "system",
+      "label": "water"
+    },
+    {
+      "id": "symptom::water_dispenser_not_working",
+      "type": "symptom",
+      "label": "water dispenser not working"
+    },
+    {
+      "id": "symptom::ice_maker_not_working",
+      "type": "symptom",
+      "label": "ice maker not working"
+    },
+    {
+      "id": "evidence::water_supply",
+      "type": "evidence",
+      "label": "water_supply"
+    },
+    {
+      "id": "evidence::water_supply:yes",
+      "type": "observation",
+      "label": "water_supply = yes",
+      "key": "water_supply",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::water_supply:no",
+      "type": "observation",
+      "label": "water_supply = no",
+      "key": "water_supply",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::valve_receives_power",
+      "type": "evidence",
+      "label": "valve_receives_power"
+    },
+    {
+      "id": "evidence::valve_receives_power:yes",
+      "type": "observation",
+      "label": "valve_receives_power = yes",
+      "key": "valve_receives_power",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::valve_receives_power:no",
+      "type": "observation",
+      "label": "valve_receives_power = no",
+      "key": "valve_receives_power",
+      "answer": "no"
+    },
+    {
+      "id": "test::supply_check",
+      "type": "test",
+      "label": "supply_check"
+    },
+    {
+      "id": "test::valve_test",
+      "type": "test",
+      "label": "valve_test"
+    },
+    {
+      "id": "failure:refrigerator_filter_restriction",
+      "type": "failure",
+      "label": "Water filter / filter head restriction",
+      "applianceType": "refrigerator",
+      "system": "water",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "component::water_filter_filter_head_restriction",
+      "type": "component",
+      "label": "Water filter / filter head restriction"
+    },
+    {
+      "id": "evidence::flow_improves_without_filter",
+      "type": "evidence",
+      "label": "flow_improves_without_filter"
+    },
+    {
+      "id": "evidence::flow_improves_without_filter:yes",
+      "type": "observation",
+      "label": "flow_improves_without_filter = yes",
+      "key": "flow_improves_without_filter",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::flow_improves_without_filter:no",
+      "type": "observation",
+      "label": "flow_improves_without_filter = no",
+      "key": "flow_improves_without_filter",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::low_water_flow",
+      "type": "evidence",
+      "label": "low_water_flow"
+    },
+    {
+      "id": "evidence::low_water_flow:yes",
+      "type": "observation",
+      "label": "low_water_flow = yes",
+      "key": "low_water_flow",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::low_water_flow:no",
+      "type": "observation",
+      "label": "low_water_flow = no",
+      "key": "low_water_flow",
+      "answer": "no"
+    },
+    {
+      "id": "test::filter_bypass_check",
+      "type": "test",
+      "label": "filter_bypass_check"
+    },
+    {
+      "id": "failure:refrigerator_ice_maker",
+      "type": "failure",
+      "label": "Ice maker assembly",
+      "applianceType": "refrigerator",
+      "system": "ice",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::ice_maker_assembly",
+      "type": "component",
+      "label": "Ice maker assembly"
+    },
+    {
+      "id": "system::ice",
+      "type": "system",
+      "label": "ice"
+    },
+    {
+      "id": "evidence::ice_maker_cycle",
+      "type": "evidence",
+      "label": "ice_maker_cycle"
+    },
+    {
+      "id": "evidence::ice_maker_cycle:yes",
+      "type": "observation",
+      "label": "ice_maker_cycle = yes",
+      "key": "ice_maker_cycle",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::ice_maker_cycle:no",
+      "type": "observation",
+      "label": "ice_maker_cycle = no",
+      "key": "ice_maker_cycle",
+      "answer": "no"
+    },
+    {
+      "id": "test::ice_maker_cycle_test",
+      "type": "test",
+      "label": "ice_maker_cycle_test"
+    },
+    {
+      "id": "failure:washer_drain_pump",
+      "type": "failure",
+      "label": "Drain pump / obstruction",
+      "applianceType": "washer",
+      "system": "drain",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::drain_pump_obstruction",
+      "type": "component",
+      "label": "Drain pump / obstruction"
+    },
+    {
+      "id": "system::drain",
+      "type": "system",
+      "label": "drain"
+    },
+    {
+      "id": "symptom::won_t_drain",
+      "type": "symptom",
+      "label": "won't drain"
+    },
+    {
+      "id": "evidence::water_remaining",
+      "type": "evidence",
+      "label": "water_remaining"
+    },
+    {
+      "id": "evidence::water_remaining:yes",
+      "type": "observation",
+      "label": "water_remaining = yes",
+      "key": "water_remaining",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::water_remaining:no",
+      "type": "observation",
+      "label": "water_remaining = no",
+      "key": "water_remaining",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::pump_hums",
+      "type": "evidence",
+      "label": "pump_hums"
+    },
+    {
+      "id": "evidence::pump_hums:yes",
+      "type": "observation",
+      "label": "pump_hums = yes",
+      "key": "pump_hums",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::pump_hums:no",
+      "type": "observation",
+      "label": "pump_hums = no",
+      "key": "pump_hums",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::pump_receives_power",
+      "type": "evidence",
+      "label": "pump_receives_power"
+    },
+    {
+      "id": "evidence::pump_receives_power:yes",
+      "type": "observation",
+      "label": "pump_receives_power = yes",
+      "key": "pump_receives_power",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::pump_receives_power:no",
+      "type": "observation",
+      "label": "pump_receives_power = no",
+      "key": "pump_receives_power",
+      "answer": "no"
+    },
+    {
+      "id": "test::pump_obstruction_check",
+      "type": "test",
+      "label": "pump_obstruction_check"
+    },
+    {
+      "id": "test::pump_electrical_test",
+      "type": "test",
+      "label": "pump_electrical_test"
+    },
+    {
+      "id": "failure:washer_drain_hose",
+      "type": "failure",
+      "label": "Drain hose / standpipe restriction",
+      "applianceType": "washer",
+      "system": "drain",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "component::drain_hose_standpipe_restriction",
+      "type": "component",
+      "label": "Drain hose / standpipe restriction"
+    },
+    {
+      "id": "symptom::leaking",
+      "type": "symptom",
+      "label": "leaking"
+    },
+    {
+      "id": "evidence::hose_kinked",
+      "type": "evidence",
+      "label": "hose_kinked"
+    },
+    {
+      "id": "evidence::hose_kinked:yes",
+      "type": "observation",
+      "label": "hose_kinked = yes",
+      "key": "hose_kinked",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::hose_kinked:no",
+      "type": "observation",
+      "label": "hose_kinked = no",
+      "key": "hose_kinked",
+      "answer": "no"
+    },
+    {
+      "id": "test::drain_path_check",
+      "type": "test",
+      "label": "drain_path_check"
+    },
+    {
+      "id": "failure:washer_door_lid_lock",
+      "type": "failure",
+      "label": "Door/lid lock",
+      "applianceType": "washer",
+      "system": "controls",
+      "safetyRisk": "mechanical"
+    },
+    {
+      "id": "component::door_lid_lock",
+      "type": "component",
+      "label": "Door/lid lock"
+    },
+    {
+      "id": "symptom::won_t_start",
+      "type": "symptom",
+      "label": "won't start"
+    },
+    {
+      "id": "symptom::won_t_spin",
+      "type": "symptom",
+      "label": "won't spin"
+    },
+    {
+      "id": "evidence::lock_engages",
+      "type": "evidence",
+      "label": "lock_engages"
+    },
+    {
+      "id": "evidence::lock_engages:yes",
+      "type": "observation",
+      "label": "lock_engages = yes",
+      "key": "lock_engages",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::lock_engages:no",
+      "type": "observation",
+      "label": "lock_engages = no",
+      "key": "lock_engages",
+      "answer": "no"
+    },
+    {
+      "id": "test::lock_observation",
+      "type": "test",
+      "label": "lock_observation"
+    },
+    {
+      "id": "failure:washer_inlet_valve",
+      "type": "failure",
+      "label": "Water inlet valve",
+      "applianceType": "washer",
+      "system": "fill",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "system::fill",
+      "type": "system",
+      "label": "fill"
+    },
+    {
+      "id": "symptom::won_t_fill",
+      "type": "symptom",
+      "label": "won't fill"
+    },
+    {
+      "id": "failure:washer_pressure_system",
+      "type": "failure",
+      "label": "Pressure switch / pressure hose",
+      "applianceType": "washer",
+      "system": "fill",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "component::pressure_switch_pressure_hose",
+      "type": "component",
+      "label": "Pressure switch / pressure hose"
+    },
+    {
+      "id": "evidence::water_level_sense",
+      "type": "evidence",
+      "label": "water_level_sense"
+    },
+    {
+      "id": "evidence::water_level_sense:yes",
+      "type": "observation",
+      "label": "water_level_sense = yes",
+      "key": "water_level_sense",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::water_level_sense:no",
+      "type": "observation",
+      "label": "water_level_sense = no",
+      "key": "water_level_sense",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::pressure_hose_blocked",
+      "type": "evidence",
+      "label": "pressure_hose_blocked"
+    },
+    {
+      "id": "evidence::pressure_hose_blocked:yes",
+      "type": "observation",
+      "label": "pressure_hose_blocked = yes",
+      "key": "pressure_hose_blocked",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::pressure_hose_blocked:no",
+      "type": "observation",
+      "label": "pressure_hose_blocked = no",
+      "key": "pressure_hose_blocked",
+      "answer": "no"
+    },
+    {
+      "id": "test::pressure_system_check",
+      "type": "test",
+      "label": "pressure_system_check"
+    },
+    {
+      "id": "failure:washer_motor",
+      "type": "failure",
+      "label": "Drive motor",
+      "applianceType": "washer",
+      "system": "drive",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::drive_motor",
+      "type": "component",
+      "label": "Drive motor"
+    },
+    {
+      "id": "system::drive",
+      "type": "system",
+      "label": "drive"
+    },
+    {
+      "id": "evidence::motor_hums",
+      "type": "evidence",
+      "label": "motor_hums"
+    },
+    {
+      "id": "evidence::motor_hums:yes",
+      "type": "observation",
+      "label": "motor_hums = yes",
+      "key": "motor_hums",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::motor_hums:no",
+      "type": "observation",
+      "label": "motor_hums = no",
+      "key": "motor_hums",
+      "answer": "no"
+    },
+    {
+      "id": "test::motor_test",
+      "type": "test",
+      "label": "motor_test"
+    },
+    {
+      "id": "failure:washer_drive_belt",
+      "type": "failure",
+      "label": "Drive belt / pulley",
+      "applianceType": "washer",
+      "system": "drive",
+      "safetyRisk": "mechanical"
+    },
+    {
+      "id": "component::drive_belt_pulley",
+      "type": "component",
+      "label": "Drive belt / pulley"
+    },
+    {
+      "id": "test::belt_inspection",
+      "type": "test",
+      "label": "belt_inspection"
+    },
+    {
+      "id": "failure:washer_shifter",
+      "type": "failure",
+      "label": "Shift actuator / shifter",
+      "applianceType": "washer",
+      "system": "drive",
+      "safetyRisk": "mechanical"
+    },
+    {
+      "id": "component::shift_actuator_shifter",
+      "type": "component",
+      "label": "Shift actuator / shifter"
+    },
+    {
+      "id": "evidence::agitate_works",
+      "type": "evidence",
+      "label": "agitate_works"
+    },
+    {
+      "id": "evidence::agitate_works:yes",
+      "type": "observation",
+      "label": "agitate_works = yes",
+      "key": "agitate_works",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::agitate_works:no",
+      "type": "observation",
+      "label": "agitate_works = no",
+      "key": "agitate_works",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::spin_works",
+      "type": "evidence",
+      "label": "spin_works"
+    },
+    {
+      "id": "evidence::spin_works:yes",
+      "type": "observation",
+      "label": "spin_works = yes",
+      "key": "spin_works",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::spin_works:no",
+      "type": "observation",
+      "label": "spin_works = no",
+      "key": "spin_works",
+      "answer": "no"
+    },
+    {
+      "id": "test::actuator_test",
+      "type": "test",
+      "label": "actuator_test"
+    },
+    {
+      "id": "failure:washer_suspension",
+      "type": "failure",
+      "label": "Suspension / shock absorbers",
+      "applianceType": "washer",
+      "system": "spin",
+      "safetyRisk": "mechanical"
+    },
+    {
+      "id": "component::suspension_shock_absorbers",
+      "type": "component",
+      "label": "Suspension / shock absorbers"
+    },
+    {
+      "id": "system::spin",
+      "type": "system",
+      "label": "spin"
+    },
+    {
+      "id": "evidence::violent_vibration",
+      "type": "evidence",
+      "label": "violent_vibration"
+    },
+    {
+      "id": "evidence::violent_vibration:yes",
+      "type": "observation",
+      "label": "violent_vibration = yes",
+      "key": "violent_vibration",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::violent_vibration:no",
+      "type": "observation",
+      "label": "violent_vibration = no",
+      "key": "violent_vibration",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::load_balanced",
+      "type": "evidence",
+      "label": "load_balanced"
+    },
+    {
+      "id": "evidence::load_balanced:yes",
+      "type": "observation",
+      "label": "load_balanced = yes",
+      "key": "load_balanced",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::load_balanced:no",
+      "type": "observation",
+      "label": "load_balanced = no",
+      "key": "load_balanced",
+      "answer": "no"
+    },
+    {
+      "id": "test::suspension_inspection",
+      "type": "test",
+      "label": "suspension_inspection"
+    },
+    {
+      "id": "failure:washer_water_level_overfill",
+      "type": "failure",
+      "label": "Water-level control / inlet valve stuck open",
+      "applianceType": "washer",
+      "system": "fill",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "component::water_level_control_inlet_valve_stuck_open",
+      "type": "component",
+      "label": "Water-level control / inlet valve stuck open"
+    },
+    {
+      "id": "evidence::continues_filling",
+      "type": "evidence",
+      "label": "continues_filling"
+    },
+    {
+      "id": "evidence::continues_filling:yes",
+      "type": "observation",
+      "label": "continues_filling = yes",
+      "key": "continues_filling",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::continues_filling:no",
+      "type": "observation",
+      "label": "continues_filling = no",
+      "key": "continues_filling",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::water_level_high",
+      "type": "evidence",
+      "label": "water_level_high"
+    },
+    {
+      "id": "evidence::water_level_high:yes",
+      "type": "observation",
+      "label": "water_level_high = yes",
+      "key": "water_level_high",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::water_level_high:no",
+      "type": "observation",
+      "label": "water_level_high = no",
+      "key": "water_level_high",
+      "answer": "no"
+    },
+    {
+      "id": "test::inlet_valve_test",
+      "type": "test",
+      "label": "inlet_valve_test"
+    },
+    {
+      "id": "failure:dishwasher_drain_pump",
+      "type": "failure",
+      "label": "Drain pump / obstruction",
+      "applianceType": "dishwasher",
+      "system": "drain",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "evidence::water_standing",
+      "type": "evidence",
+      "label": "water_standing"
+    },
+    {
+      "id": "evidence::water_standing:yes",
+      "type": "observation",
+      "label": "water_standing = yes",
+      "key": "water_standing",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::water_standing:no",
+      "type": "observation",
+      "label": "water_standing = no",
+      "key": "water_standing",
+      "answer": "no"
+    },
+    {
+      "id": "failure:dishwasher_drain_hose",
+      "type": "failure",
+      "label": "Drain hose / air-gap / disposer connection",
+      "applianceType": "dishwasher",
+      "system": "drain",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "component::drain_hose_air_gap_disposer_connection",
+      "type": "component",
+      "label": "Drain hose / air-gap / disposer connection"
+    },
+    {
+      "id": "evidence::hose_restricted",
+      "type": "evidence",
+      "label": "hose_restricted"
+    },
+    {
+      "id": "evidence::hose_restricted:yes",
+      "type": "observation",
+      "label": "hose_restricted = yes",
+      "key": "hose_restricted",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::hose_restricted:no",
+      "type": "observation",
+      "label": "hose_restricted = no",
+      "key": "hose_restricted",
+      "answer": "no"
+    },
+    {
+      "id": "failure:dishwasher_circulation_pump",
+      "type": "failure",
+      "label": "Circulation pump / wash system",
+      "applianceType": "dishwasher",
+      "system": "wash",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::circulation_pump_wash_system",
+      "type": "component",
+      "label": "Circulation pump / wash system"
+    },
+    {
+      "id": "system::wash",
+      "type": "system",
+      "label": "wash"
+    },
+    {
+      "id": "symptom::not_cleaning",
+      "type": "symptom",
+      "label": "not cleaning"
+    },
+    {
+      "id": "evidence::fills",
+      "type": "evidence",
+      "label": "fills"
+    },
+    {
+      "id": "evidence::fills:yes",
+      "type": "observation",
+      "label": "fills = yes",
+      "key": "fills",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::fills:no",
+      "type": "observation",
+      "label": "fills = no",
+      "key": "fills",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::water_spray",
+      "type": "evidence",
+      "label": "water_spray"
+    },
+    {
+      "id": "evidence::water_spray:yes",
+      "type": "observation",
+      "label": "water_spray = yes",
+      "key": "water_spray",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::water_spray:no",
+      "type": "observation",
+      "label": "water_spray = no",
+      "key": "water_spray",
+      "answer": "no"
+    },
+    {
+      "id": "test::spray_arm_check",
+      "type": "test",
+      "label": "spray_arm_check"
+    },
+    {
+      "id": "test::circulation_pump_check",
+      "type": "test",
+      "label": "circulation_pump_check"
+    },
+    {
+      "id": "failure:dishwasher_inlet_valve",
+      "type": "failure",
+      "label": "Water inlet valve / supply",
+      "applianceType": "dishwasher",
+      "system": "fill",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "component::water_inlet_valve_supply",
+      "type": "component",
+      "label": "Water inlet valve / supply"
+    },
+    {
+      "id": "evidence::inlet_valve_opens",
+      "type": "evidence",
+      "label": "inlet_valve_opens"
+    },
+    {
+      "id": "evidence::inlet_valve_opens:yes",
+      "type": "observation",
+      "label": "inlet_valve_opens = yes",
+      "key": "inlet_valve_opens",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::inlet_valve_opens:no",
+      "type": "observation",
+      "label": "inlet_valve_opens = no",
+      "key": "inlet_valve_opens",
+      "answer": "no"
+    },
+    {
+      "id": "failure:dishwasher_float_switch",
+      "type": "failure",
+      "label": "Float / overfill switch",
+      "applianceType": "dishwasher",
+      "system": "fill",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "component::float_overfill_switch",
+      "type": "component",
+      "label": "Float / overfill switch"
+    },
+    {
+      "id": "evidence::float_stuck_up",
+      "type": "evidence",
+      "label": "float_stuck_up"
+    },
+    {
+      "id": "evidence::float_stuck_up:yes",
+      "type": "observation",
+      "label": "float_stuck_up = yes",
+      "key": "float_stuck_up",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::float_stuck_up:no",
+      "type": "observation",
+      "label": "float_stuck_up = no",
+      "key": "float_stuck_up",
+      "answer": "no"
+    },
+    {
+      "id": "test::float_inspection",
+      "type": "test",
+      "label": "float_inspection"
+    },
+    {
+      "id": "test::switch_test",
+      "type": "test",
+      "label": "switch_test"
+    },
+    {
+      "id": "failure:dishwasher_heater",
+      "type": "failure",
+      "label": "Heating element / heater circuit",
+      "applianceType": "dishwasher",
+      "system": "heat",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::heating_element_heater_circuit",
+      "type": "component",
+      "label": "Heating element / heater circuit"
+    },
+    {
+      "id": "symptom::not_drying",
+      "type": "symptom",
+      "label": "not drying"
+    },
+    {
+      "id": "evidence::water_hot",
+      "type": "evidence",
+      "label": "water_hot"
+    },
+    {
+      "id": "evidence::water_hot:yes",
+      "type": "observation",
+      "label": "water_hot = yes",
+      "key": "water_hot",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::water_hot:no",
+      "type": "observation",
+      "label": "water_hot = no",
+      "key": "water_hot",
+      "answer": "no"
+    },
+    {
+      "id": "test::heater_voltage_test",
+      "type": "test",
+      "label": "heater_voltage_test"
+    },
+    {
+      "id": "failure:dishwasher_thermostat",
+      "type": "failure",
+      "label": "High-limit thermostat / temperature sensor",
+      "applianceType": "dishwasher",
+      "system": "heat",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::high_limit_thermostat_temperature_sensor",
+      "type": "component",
+      "label": "High-limit thermostat / temperature sensor"
+    },
+    {
+      "id": "test::sensor_test",
+      "type": "test",
+      "label": "sensor_test"
+    },
+    {
+      "id": "test::thermostat_test",
+      "type": "test",
+      "label": "thermostat_test"
+    },
+    {
+      "id": "failure:dishwasher_door_latch",
+      "type": "failure",
+      "label": "Door latch / door switch",
+      "applianceType": "dishwasher",
+      "system": "controls",
+      "safetyRisk": "mechanical"
+    },
+    {
+      "id": "component::door_latch_door_switch",
+      "type": "component",
+      "label": "Door latch / door switch"
+    },
+    {
+      "id": "evidence::door_latch_engages",
+      "type": "evidence",
+      "label": "door_latch_engages"
+    },
+    {
+      "id": "evidence::door_latch_engages:yes",
+      "type": "observation",
+      "label": "door_latch_engages = yes",
+      "key": "door_latch_engages",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::door_latch_engages:no",
+      "type": "observation",
+      "label": "door_latch_engages = no",
+      "key": "door_latch_engages",
+      "answer": "no"
+    },
+    {
+      "id": "test::latch_observation",
+      "type": "test",
+      "label": "latch_observation"
+    },
+    {
+      "id": "failure:dishwasher_control_board",
+      "type": "failure",
+      "label": "Control board / control system",
+      "applianceType": "dishwasher",
+      "system": "controls",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::control_board_control_system",
+      "type": "component",
+      "label": "Control board / control system"
+    },
+    {
+      "id": "evidence::power_present",
+      "type": "evidence",
+      "label": "power_present"
+    },
+    {
+      "id": "evidence::power_present:yes",
+      "type": "observation",
+      "label": "power_present = yes",
+      "key": "power_present",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::power_present:no",
+      "type": "observation",
+      "label": "power_present = no",
+      "key": "power_present",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::latch_engages",
+      "type": "evidence",
+      "label": "latch_engages"
+    },
+    {
+      "id": "evidence::latch_engages:yes",
+      "type": "observation",
+      "label": "latch_engages = yes",
+      "key": "latch_engages",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::latch_engages:no",
+      "type": "observation",
+      "label": "latch_engages = no",
+      "key": "latch_engages",
+      "answer": "no"
+    },
+    {
+      "id": "test::power_check",
+      "type": "test",
+      "label": "power_check"
+    },
+    {
+      "id": "test::control_output_test",
+      "type": "test",
+      "label": "control_output_test"
+    },
+    {
+      "id": "failure:dishwasher_spray_arm",
+      "type": "failure",
+      "label": "Spray arm / spray path obstruction",
+      "applianceType": "dishwasher",
+      "system": "wash",
+      "safetyRisk": "mechanical"
+    },
+    {
+      "id": "component::spray_arm_spray_path_obstruction",
+      "type": "component",
+      "label": "Spray arm / spray path obstruction"
+    },
+    {
+      "id": "evidence::spray_arm_blocked",
+      "type": "evidence",
+      "label": "spray_arm_blocked"
+    },
+    {
+      "id": "evidence::spray_arm_blocked:yes",
+      "type": "observation",
+      "label": "spray_arm_blocked = yes",
+      "key": "spray_arm_blocked",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::spray_arm_blocked:no",
+      "type": "observation",
+      "label": "spray_arm_blocked = no",
+      "key": "spray_arm_blocked",
+      "answer": "no"
+    },
+    {
+      "id": "failure:dishwasher_leak_door_seal",
+      "type": "failure",
+      "label": "Door gasket / door seal",
+      "applianceType": "dishwasher",
+      "system": "leak",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "component::door_gasket_door_seal",
+      "type": "component",
+      "label": "Door gasket / door seal"
+    },
+    {
+      "id": "system::leak",
+      "type": "system",
+      "label": "leak"
+    },
+    {
+      "id": "evidence::leak_at_door",
+      "type": "evidence",
+      "label": "leak_at_door"
+    },
+    {
+      "id": "evidence::leak_at_door:yes",
+      "type": "observation",
+      "label": "leak_at_door = yes",
+      "key": "leak_at_door",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::leak_at_door:no",
+      "type": "observation",
+      "label": "leak_at_door = no",
+      "key": "leak_at_door",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::gasket_damaged",
+      "type": "evidence",
+      "label": "gasket_damaged"
+    },
+    {
+      "id": "evidence::gasket_damaged:yes",
+      "type": "observation",
+      "label": "gasket_damaged = yes",
+      "key": "gasket_damaged",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::gasket_damaged:no",
+      "type": "observation",
+      "label": "gasket_damaged = no",
+      "key": "gasket_damaged",
+      "answer": "no"
+    },
+    {
+      "id": "test::gasket_inspection",
+      "type": "test",
+      "label": "gasket_inspection"
+    },
+    {
+      "id": "failure:dishwasher_sump_seal",
+      "type": "failure",
+      "label": "Sump / pump seal assembly",
+      "applianceType": "dishwasher",
+      "system": "leak",
+      "safetyRisk": "water"
+    },
+    {
+      "id": "component::sump_pump_seal_assembly",
+      "type": "component",
+      "label": "Sump / pump seal assembly"
+    },
+    {
+      "id": "evidence::leak_under_center",
+      "type": "evidence",
+      "label": "leak_under_center"
+    },
+    {
+      "id": "evidence::leak_under_center:yes",
+      "type": "observation",
+      "label": "leak_under_center = yes",
+      "key": "leak_under_center",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::leak_under_center:no",
+      "type": "observation",
+      "label": "leak_under_center = no",
+      "key": "leak_under_center",
+      "answer": "no"
+    },
+    {
+      "id": "evidence::pump_noise",
+      "type": "evidence",
+      "label": "pump_noise"
+    },
+    {
+      "id": "evidence::pump_noise:yes",
+      "type": "observation",
+      "label": "pump_noise = yes",
+      "key": "pump_noise",
+      "answer": "yes"
+    },
+    {
+      "id": "evidence::pump_noise:no",
+      "type": "observation",
+      "label": "pump_noise = no",
+      "key": "pump_noise",
+      "answer": "no"
+    },
+    {
+      "id": "test::sump_inspection",
+      "type": "test",
+      "label": "sump_inspection"
+    },
+    {
+      "id": "failure:common_power_supply",
+      "type": "failure",
+      "label": "Household power supply / breaker",
+      "applianceType": "dryer",
+      "system": "power",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::household_power_supply_breaker",
+      "type": "component",
+      "label": "Household power supply / breaker"
+    },
+    {
+      "id": "failure:washer_power_supply",
+      "type": "failure",
+      "label": "Household power supply / breaker",
+      "applianceType": "washer",
+      "system": "power",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "failure:dishwasher_power_supply",
+      "type": "failure",
+      "label": "Household power supply / breaker",
+      "applianceType": "dishwasher",
+      "system": "power",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "failure:refrigerator_power_supply",
+      "type": "failure",
+      "label": "Household power supply / outlet",
+      "applianceType": "refrigerator",
+      "system": "power",
+      "safetyRisk": "electrical"
+    },
+    {
+      "id": "component::household_power_supply_outlet",
+      "type": "component",
+      "label": "Household power supply / outlet"
+    },
+    {
+      "id": "test::outlet_power_check",
+      "type": "test",
+      "label": "outlet_power_check"
+    }
+  ],
+  "edges": [
+    {
+      "from": "failure:dryer_heating_element",
+      "to": "component::heating_element",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_heating_element",
+      "to": "system::heat",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::no_heat",
+      "to": "failure:dryer_heating_element",
+      "relation": "supports",
+      "weight": 0.3,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::long_dry_time",
+      "to": "failure:dryer_heating_element",
+      "relation": "supports",
+      "weight": 0.18,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::heater_glows:yes",
+      "to": "failure:dryer_heating_element",
+      "relation": "supports",
+      "weight": 0.4,
+      "source": "evidence",
+      "contribution": 0.4
+    },
+    {
+      "from": "evidence::heater_glows:no",
+      "to": "failure:dryer_heating_element",
+      "relation": "contradicts",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": -0.3
+    },
+    {
+      "from": "evidence::airflow_strong:yes",
+      "to": "failure:dryer_heating_element",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::airflow_strong:no",
+      "to": "failure:dryer_heating_element",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::element_continuity:yes",
+      "to": "failure:dryer_heating_element",
+      "relation": "contradicts",
+      "weight": 0.35,
+      "source": "evidence",
+      "contribution": -0.35
+    },
+    {
+      "from": "evidence::element_continuity:no",
+      "to": "failure:dryer_heating_element",
+      "relation": "supports",
+      "weight": 0.85,
+      "source": "evidence",
+      "contribution": 0.85
+    },
+    {
+      "from": "failure:dryer_heating_element",
+      "to": "test::continuity_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_heating_element",
+      "to": "test::voltage_to_heater",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_thermal_cutoff",
+      "to": "component::thermal_cutoff_thermal_fuse",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_thermal_cutoff",
+      "to": "system::heat",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::no_heat",
+      "to": "failure:dryer_thermal_cutoff",
+      "relation": "supports",
+      "weight": 0.18,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::overheats",
+      "to": "failure:dryer_thermal_cutoff",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::heater_glows:yes",
+      "to": "failure:dryer_thermal_cutoff",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "evidence::heater_glows:no",
+      "to": "failure:dryer_thermal_cutoff",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::thermal_cutoff_open:yes",
+      "to": "failure:dryer_thermal_cutoff",
+      "relation": "supports",
+      "weight": 0.65,
+      "source": "evidence",
+      "contribution": 0.65
+    },
+    {
+      "from": "evidence::thermal_cutoff_open:no",
+      "to": "failure:dryer_thermal_cutoff",
+      "relation": "contradicts",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": -0.25
+    },
+    {
+      "from": "failure:dryer_thermal_cutoff",
+      "to": "test::continuity_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_high_limit_thermostat",
+      "to": "component::high_limit_thermostat",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_high_limit_thermostat",
+      "to": "system::heat",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::no_heat",
+      "to": "failure:dryer_high_limit_thermostat",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::overheats",
+      "to": "failure:dryer_high_limit_thermostat",
+      "relation": "supports",
+      "weight": 0.16,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::high_limit_open:yes",
+      "to": "failure:dryer_high_limit_thermostat",
+      "relation": "supports",
+      "weight": 0.65,
+      "source": "evidence",
+      "contribution": 0.65
+    },
+    {
+      "from": "evidence::high_limit_open:no",
+      "to": "failure:dryer_high_limit_thermostat",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::overheats:yes",
+      "to": "failure:dryer_high_limit_thermostat",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": 0.2
+    },
+    {
+      "from": "evidence::overheats:no",
+      "to": "failure:dryer_high_limit_thermostat",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "failure:dryer_high_limit_thermostat",
+      "to": "test::thermostat_continuity_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_cycling_thermostat",
+      "to": "component::cycling_thermostat",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_cycling_thermostat",
+      "to": "system::heat",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::no_heat",
+      "to": "failure:dryer_cycling_thermostat",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::long_dry_time",
+      "to": "failure:dryer_cycling_thermostat",
+      "relation": "supports",
+      "weight": 0.14,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::overheats",
+      "to": "failure:dryer_cycling_thermostat",
+      "relation": "supports",
+      "weight": 0.12,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::temperature_cycles:yes",
+      "to": "failure:dryer_cycling_thermostat",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::temperature_cycles:no",
+      "to": "failure:dryer_cycling_thermostat",
+      "relation": "supports",
+      "weight": 0.45,
+      "source": "evidence",
+      "contribution": 0.45
+    },
+    {
+      "from": "evidence::airflow_strong:yes",
+      "to": "failure:dryer_cycling_thermostat",
+      "relation": "supports",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": 0.05
+    },
+    {
+      "from": "evidence::airflow_strong:no",
+      "to": "failure:dryer_cycling_thermostat",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "failure:dryer_cycling_thermostat",
+      "to": "test::temperature_cycle_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_vent_restriction",
+      "to": "component::vent_restriction_airflow_path",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_vent_restriction",
+      "to": "system::airflow",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::long_dry_time",
+      "to": "failure:dryer_vent_restriction",
+      "relation": "supports",
+      "weight": 0.28,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::overheats",
+      "to": "failure:dryer_vent_restriction",
+      "relation": "supports",
+      "weight": 0.22,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::no_heat",
+      "to": "failure:dryer_vent_restriction",
+      "relation": "supports",
+      "weight": 0.06,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::airflow_strong:yes",
+      "to": "failure:dryer_vent_restriction",
+      "relation": "contradicts",
+      "weight": 0.35,
+      "source": "evidence",
+      "contribution": -0.35
+    },
+    {
+      "from": "evidence::airflow_strong:no",
+      "to": "failure:dryer_vent_restriction",
+      "relation": "supports",
+      "weight": 0.65,
+      "source": "evidence",
+      "contribution": 0.65
+    },
+    {
+      "from": "evidence::outside_flap_opens:yes",
+      "to": "failure:dryer_vent_restriction",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::outside_flap_opens:no",
+      "to": "failure:dryer_vent_restriction",
+      "relation": "supports",
+      "weight": 0.45,
+      "source": "evidence",
+      "contribution": 0.45
+    },
+    {
+      "from": "failure:dryer_vent_restriction",
+      "to": "test::airflow_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_motor_switch",
+      "to": "component::motor_centrifugal_switch",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_motor_switch",
+      "to": "system::motor",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::no_heat",
+      "to": "failure:dryer_motor_switch",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::wont_start",
+      "to": "failure:dryer_motor_switch",
+      "relation": "supports",
+      "weight": 0.18,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::motor_runs:yes",
+      "to": "failure:dryer_motor_switch",
+      "relation": "contradicts",
+      "weight": 0.35,
+      "source": "evidence",
+      "contribution": -0.35
+    },
+    {
+      "from": "evidence::motor_runs:no",
+      "to": "failure:dryer_motor_switch",
+      "relation": "supports",
+      "weight": 0.65,
+      "source": "evidence",
+      "contribution": 0.65
+    },
+    {
+      "from": "evidence::drum_turns:yes",
+      "to": "failure:dryer_motor_switch",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::drum_turns:no",
+      "to": "failure:dryer_motor_switch",
+      "relation": "supports",
+      "weight": 0.45,
+      "source": "evidence",
+      "contribution": 0.45
+    },
+    {
+      "from": "failure:dryer_motor_switch",
+      "to": "test::motor_operation_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_terminal_block",
+      "to": "component::terminal_block_power_connection",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_terminal_block",
+      "to": "system::power",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::wont_start",
+      "to": "failure:dryer_terminal_block",
+      "relation": "supports",
+      "weight": 0.16,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::no_heat",
+      "to": "failure:dryer_terminal_block",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::voltage_present:yes",
+      "to": "failure:dryer_terminal_block",
+      "relation": "contradicts",
+      "weight": 0.4,
+      "source": "evidence",
+      "contribution": -0.4
+    },
+    {
+      "from": "evidence::voltage_present:no",
+      "to": "failure:dryer_terminal_block",
+      "relation": "supports",
+      "weight": 0.8,
+      "source": "evidence",
+      "contribution": 0.8
+    },
+    {
+      "from": "evidence::burning_smell:yes",
+      "to": "failure:dryer_terminal_block",
+      "relation": "supports",
+      "weight": 0.45,
+      "source": "evidence",
+      "contribution": 0.45
+    },
+    {
+      "from": "evidence::burning_smell:no",
+      "to": "failure:dryer_terminal_block",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "failure:dryer_terminal_block",
+      "to": "test::supply_voltage_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_gas_igniter",
+      "to": "component::gas_igniter",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_gas_igniter",
+      "to": "system::gas",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::no_heat",
+      "to": "failure:dryer_gas_igniter",
+      "relation": "supports",
+      "weight": 0.24,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::igniter_glows:yes",
+      "to": "failure:dryer_gas_igniter",
+      "relation": "contradicts",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": -0.25
+    },
+    {
+      "from": "evidence::igniter_glows:no",
+      "to": "failure:dryer_gas_igniter",
+      "relation": "supports",
+      "weight": 0.55,
+      "source": "evidence",
+      "contribution": 0.55
+    },
+    {
+      "from": "evidence::gas_flame:yes",
+      "to": "failure:dryer_gas_igniter",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::gas_flame:no",
+      "to": "failure:dryer_gas_igniter",
+      "relation": "supports",
+      "weight": 0.35,
+      "source": "evidence",
+      "contribution": 0.35
+    },
+    {
+      "from": "failure:dryer_gas_igniter",
+      "to": "test::igniter_observation",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_gas_igniter",
+      "to": "test::igniter_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_gas_coils",
+      "to": "component::gas_valve_coils",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_gas_coils",
+      "to": "system::gas",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::no_heat",
+      "to": "failure:dryer_gas_coils",
+      "relation": "supports",
+      "weight": 0.16,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::long_dry_time",
+      "to": "failure:dryer_gas_coils",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::igniter_glows:yes",
+      "to": "failure:dryer_gas_coils",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": 0.2
+    },
+    {
+      "from": "evidence::igniter_glows:no",
+      "to": "failure:dryer_gas_coils",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::flame_starts_then_stops:yes",
+      "to": "failure:dryer_gas_coils",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "evidence::flame_starts_then_stops:no",
+      "to": "failure:dryer_gas_coils",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "failure:dryer_gas_coils",
+      "to": "test::flame_cycle_observation",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_flame_sensor",
+      "to": "component::flame_sensor",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_flame_sensor",
+      "to": "system::gas",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::no_heat",
+      "to": "failure:dryer_flame_sensor",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::igniter_glows:yes",
+      "to": "failure:dryer_flame_sensor",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::igniter_glows:no",
+      "to": "failure:dryer_flame_sensor",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "evidence::flame_starts_then_stops:yes",
+      "to": "failure:dryer_flame_sensor",
+      "relation": "supports",
+      "weight": 0.45,
+      "source": "evidence",
+      "contribution": 0.45
+    },
+    {
+      "from": "evidence::flame_starts_then_stops:no",
+      "to": "failure:dryer_flame_sensor",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "failure:dryer_flame_sensor",
+      "to": "test::flame_sensor_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_blower_wheel",
+      "to": "component::blower_wheel_airflow_assembly",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_blower_wheel",
+      "to": "system::airflow",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::long_dry_time",
+      "to": "failure:dryer_blower_wheel",
+      "relation": "supports",
+      "weight": 0.12,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::noise",
+      "to": "failure:dryer_blower_wheel",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::airflow_strong:yes",
+      "to": "failure:dryer_blower_wheel",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::airflow_strong:no",
+      "to": "failure:dryer_blower_wheel",
+      "relation": "supports",
+      "weight": 0.55,
+      "source": "evidence",
+      "contribution": 0.55
+    },
+    {
+      "from": "evidence::rattling_noise:yes",
+      "to": "failure:dryer_blower_wheel",
+      "relation": "supports",
+      "weight": 0.4,
+      "source": "evidence",
+      "contribution": 0.4
+    },
+    {
+      "from": "evidence::rattling_noise:no",
+      "to": "failure:dryer_blower_wheel",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "failure:dryer_blower_wheel",
+      "to": "test::blower_inspection",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_evaporator_fan",
+      "to": "component::evaporator_fan_motor_circuit",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_evaporator_fan",
+      "to": "system::airflow",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cooling",
+      "to": "failure:refrigerator_evaporator_fan",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::noise",
+      "to": "failure:refrigerator_evaporator_fan",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::freezer_cold:yes",
+      "to": "failure:refrigerator_evaporator_fan",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::freezer_cold:no",
+      "to": "failure:refrigerator_evaporator_fan",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::evaporator_fan:yes",
+      "to": "failure:refrigerator_evaporator_fan",
+      "relation": "contradicts",
+      "weight": 0.45,
+      "source": "evidence",
+      "contribution": -0.45
+    },
+    {
+      "from": "evidence::evaporator_fan:no",
+      "to": "failure:refrigerator_evaporator_fan",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "failure:refrigerator_evaporator_fan",
+      "to": "test::fan_observation",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_evaporator_fan",
+      "to": "test::wiring_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_condenser_fan",
+      "to": "component::condenser_fan_motor_circuit",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_condenser_fan",
+      "to": "system::cooling",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cooling",
+      "to": "failure:refrigerator_condenser_fan",
+      "relation": "supports",
+      "weight": 0.14,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::overheats",
+      "to": "failure:refrigerator_condenser_fan",
+      "relation": "supports",
+      "weight": 0.12,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::noise",
+      "to": "failure:refrigerator_condenser_fan",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::condenser_fan:yes",
+      "to": "failure:refrigerator_condenser_fan",
+      "relation": "contradicts",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": -0.3
+    },
+    {
+      "from": "evidence::condenser_fan:no",
+      "to": "failure:refrigerator_condenser_fan",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "evidence::compressor_running:yes",
+      "to": "failure:refrigerator_condenser_fan",
+      "relation": "supports",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": 0.15
+    },
+    {
+      "from": "evidence::compressor_running:no",
+      "to": "failure:refrigerator_condenser_fan",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "failure:refrigerator_condenser_fan",
+      "to": "test::fan_observation",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_condenser_fan",
+      "to": "test::wiring_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_defrost_system",
+      "to": "component::defrost_system",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_defrost_system",
+      "to": "system::defrost",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cooling",
+      "to": "failure:refrigerator_defrost_system",
+      "relation": "supports",
+      "weight": 0.16,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::heavy_frost:yes",
+      "to": "failure:refrigerator_defrost_system",
+      "relation": "supports",
+      "weight": 0.75,
+      "source": "evidence",
+      "contribution": 0.75
+    },
+    {
+      "from": "evidence::heavy_frost:no",
+      "to": "failure:refrigerator_defrost_system",
+      "relation": "contradicts",
+      "weight": 0.35,
+      "source": "evidence",
+      "contribution": -0.35
+    },
+    {
+      "from": "failure:refrigerator_defrost_system",
+      "to": "test::frost_pattern_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_defrost_system",
+      "to": "test::heater_continuity",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_start_device",
+      "to": "component::compressor_start_device_overload",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_start_device",
+      "to": "system::cooling",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cooling",
+      "to": "failure:refrigerator_start_device",
+      "relation": "supports",
+      "weight": 0.13,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::noise",
+      "to": "failure:refrigerator_start_device",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::compressor_running:yes",
+      "to": "failure:refrigerator_start_device",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::compressor_running:no",
+      "to": "failure:refrigerator_start_device",
+      "relation": "supports",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": 0.25
+    },
+    {
+      "from": "evidence::clicking:yes",
+      "to": "failure:refrigerator_start_device",
+      "relation": "supports",
+      "weight": 0.65,
+      "source": "evidence",
+      "contribution": 0.65
+    },
+    {
+      "from": "evidence::clicking:no",
+      "to": "failure:refrigerator_start_device",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "failure:refrigerator_start_device",
+      "to": "test::start_device_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_compressor",
+      "to": "component::compressor",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_compressor",
+      "to": "system::cooling",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cooling",
+      "to": "failure:refrigerator_compressor",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::compressor_running:yes",
+      "to": "failure:refrigerator_compressor",
+      "relation": "contradicts",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": -0.15
+    },
+    {
+      "from": "evidence::compressor_running:no",
+      "to": "failure:refrigerator_compressor",
+      "relation": "supports",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": 0.3
+    },
+    {
+      "from": "evidence::clicking:yes",
+      "to": "failure:refrigerator_compressor",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": 0.2
+    },
+    {
+      "from": "evidence::clicking:no",
+      "to": "failure:refrigerator_compressor",
+      "relation": "supports",
+      "weight": 0,
+      "source": "evidence",
+      "contribution": 0
+    },
+    {
+      "from": "evidence::high_temperature:yes",
+      "to": "failure:refrigerator_compressor",
+      "relation": "supports",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": 0.25
+    },
+    {
+      "from": "evidence::high_temperature:no",
+      "to": "failure:refrigerator_compressor",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "failure:refrigerator_compressor",
+      "to": "test::compressor_electrical_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_compressor",
+      "to": "test::sealed_system_evaluation",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_condenser_coils",
+      "to": "component::condenser_coil_airflow_soil",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_condenser_coils",
+      "to": "system::cooling",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cooling",
+      "to": "failure:refrigerator_condenser_coils",
+      "relation": "supports",
+      "weight": 0.09,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::overheats",
+      "to": "failure:refrigerator_condenser_coils",
+      "relation": "supports",
+      "weight": 0.14,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::dirty_coils:yes",
+      "to": "failure:refrigerator_condenser_coils",
+      "relation": "supports",
+      "weight": 0.6,
+      "source": "evidence",
+      "contribution": 0.6
+    },
+    {
+      "from": "evidence::dirty_coils:no",
+      "to": "failure:refrigerator_condenser_coils",
+      "relation": "contradicts",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": -0.25
+    },
+    {
+      "from": "evidence::condenser_fan:yes",
+      "to": "failure:refrigerator_condenser_coils",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::condenser_fan:no",
+      "to": "failure:refrigerator_condenser_coils",
+      "relation": "supports",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": 0.05
+    },
+    {
+      "from": "failure:refrigerator_condenser_coils",
+      "to": "test::coil_inspection",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_damper",
+      "to": "component::air_damper_diffuser",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_damper",
+      "to": "system::airflow",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cooling",
+      "to": "failure:refrigerator_damper",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::freezer_cold:yes",
+      "to": "failure:refrigerator_damper",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": 0.2
+    },
+    {
+      "from": "evidence::freezer_cold:no",
+      "to": "failure:refrigerator_damper",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::fresh_food_airflow:yes",
+      "to": "failure:refrigerator_damper",
+      "relation": "contradicts",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": -0.25
+    },
+    {
+      "from": "evidence::fresh_food_airflow:no",
+      "to": "failure:refrigerator_damper",
+      "relation": "supports",
+      "weight": 0.65,
+      "source": "evidence",
+      "contribution": 0.65
+    },
+    {
+      "from": "failure:refrigerator_damper",
+      "to": "test::airflow_observation",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_damper",
+      "to": "test::damper_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_thermistor",
+      "to": "component::temperature_sensor_thermistor",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_thermistor",
+      "to": "system::controls",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cooling",
+      "to": "failure:refrigerator_thermistor",
+      "relation": "supports",
+      "weight": 0.07,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::temperature_reading_wrong:yes",
+      "to": "failure:refrigerator_thermistor",
+      "relation": "supports",
+      "weight": 0.6,
+      "source": "evidence",
+      "contribution": 0.6
+    },
+    {
+      "from": "evidence::temperature_reading_wrong:no",
+      "to": "failure:refrigerator_thermistor",
+      "relation": "contradicts",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": -0.15
+    },
+    {
+      "from": "evidence::compressor_running:yes",
+      "to": "failure:refrigerator_thermistor",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "evidence::compressor_running:no",
+      "to": "failure:refrigerator_thermistor",
+      "relation": "supports",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": 0.15
+    },
+    {
+      "from": "failure:refrigerator_thermistor",
+      "to": "test::sensor_resistance_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_water_inlet_valve",
+      "to": "component::water_inlet_valve",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_water_inlet_valve",
+      "to": "system::water",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::water_dispenser_not_working",
+      "to": "failure:refrigerator_water_inlet_valve",
+      "relation": "supports",
+      "weight": 0.25,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::ice_maker_not_working",
+      "to": "failure:refrigerator_water_inlet_valve",
+      "relation": "supports",
+      "weight": 0.18,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_supply:yes",
+      "to": "failure:refrigerator_water_inlet_valve",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::water_supply:no",
+      "to": "failure:refrigerator_water_inlet_valve",
+      "relation": "contradicts",
+      "weight": 0.65,
+      "source": "evidence",
+      "contribution": -0.65
+    },
+    {
+      "from": "evidence::valve_receives_power:yes",
+      "to": "failure:refrigerator_water_inlet_valve",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::valve_receives_power:no",
+      "to": "failure:refrigerator_water_inlet_valve",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": 0.2
+    },
+    {
+      "from": "failure:refrigerator_water_inlet_valve",
+      "to": "test::supply_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_water_inlet_valve",
+      "to": "test::valve_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_filter_restriction",
+      "to": "component::water_filter_filter_head_restriction",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_filter_restriction",
+      "to": "system::water",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::water_dispenser_not_working",
+      "to": "failure:refrigerator_filter_restriction",
+      "relation": "supports",
+      "weight": 0.22,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::ice_maker_not_working",
+      "to": "failure:refrigerator_filter_restriction",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::flow_improves_without_filter:yes",
+      "to": "failure:refrigerator_filter_restriction",
+      "relation": "supports",
+      "weight": 0.75,
+      "source": "evidence",
+      "contribution": 0.75
+    },
+    {
+      "from": "evidence::flow_improves_without_filter:no",
+      "to": "failure:refrigerator_filter_restriction",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::low_water_flow:yes",
+      "to": "failure:refrigerator_filter_restriction",
+      "relation": "supports",
+      "weight": 0.35,
+      "source": "evidence",
+      "contribution": 0.35
+    },
+    {
+      "from": "evidence::low_water_flow:no",
+      "to": "failure:refrigerator_filter_restriction",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "failure:refrigerator_filter_restriction",
+      "to": "test::filter_bypass_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_ice_maker",
+      "to": "component::ice_maker_assembly",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_ice_maker",
+      "to": "system::ice",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::ice_maker_not_working",
+      "to": "failure:refrigerator_ice_maker",
+      "relation": "supports",
+      "weight": 0.3,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::ice_maker_cycle:yes",
+      "to": "failure:refrigerator_ice_maker",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::ice_maker_cycle:no",
+      "to": "failure:refrigerator_ice_maker",
+      "relation": "supports",
+      "weight": 0.6,
+      "source": "evidence",
+      "contribution": 0.6
+    },
+    {
+      "from": "evidence::water_supply:yes",
+      "to": "failure:refrigerator_ice_maker",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::water_supply:no",
+      "to": "failure:refrigerator_ice_maker",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "failure:refrigerator_ice_maker",
+      "to": "test::ice_maker_cycle_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_drain_pump",
+      "to": "component::drain_pump_obstruction",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_drain_pump",
+      "to": "system::drain",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_drain",
+      "to": "failure:washer_drain_pump",
+      "relation": "supports",
+      "weight": 0.3,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_remaining:yes",
+      "to": "failure:washer_drain_pump",
+      "relation": "supports",
+      "weight": 0.45,
+      "source": "evidence",
+      "contribution": 0.45
+    },
+    {
+      "from": "evidence::water_remaining:no",
+      "to": "failure:washer_drain_pump",
+      "relation": "contradicts",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": -0.15
+    },
+    {
+      "from": "evidence::pump_hums:yes",
+      "to": "failure:washer_drain_pump",
+      "relation": "supports",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": 0.25
+    },
+    {
+      "from": "evidence::pump_hums:no",
+      "to": "failure:washer_drain_pump",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::pump_receives_power:yes",
+      "to": "failure:washer_drain_pump",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::pump_receives_power:no",
+      "to": "failure:washer_drain_pump",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": 0.2
+    },
+    {
+      "from": "failure:washer_drain_pump",
+      "to": "test::pump_obstruction_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_drain_pump",
+      "to": "test::pump_electrical_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_drain_hose",
+      "to": "component::drain_hose_standpipe_restriction",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_drain_hose",
+      "to": "system::drain",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_drain",
+      "to": "failure:washer_drain_hose",
+      "relation": "supports",
+      "weight": 0.18,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::leaking",
+      "to": "failure:washer_drain_hose",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_remaining:yes",
+      "to": "failure:washer_drain_hose",
+      "relation": "supports",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": 0.3
+    },
+    {
+      "from": "evidence::water_remaining:no",
+      "to": "failure:washer_drain_hose",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "evidence::hose_kinked:yes",
+      "to": "failure:washer_drain_hose",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "evidence::hose_kinked:no",
+      "to": "failure:washer_drain_hose",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "failure:washer_drain_hose",
+      "to": "test::drain_path_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_door_lid_lock",
+      "to": "component::door_lid_lock",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_door_lid_lock",
+      "to": "system::controls",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_start",
+      "to": "failure:washer_door_lid_lock",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::won_t_spin",
+      "to": "failure:washer_door_lid_lock",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::lock_engages:yes",
+      "to": "failure:washer_door_lid_lock",
+      "relation": "contradicts",
+      "weight": 0.35,
+      "source": "evidence",
+      "contribution": -0.35
+    },
+    {
+      "from": "evidence::lock_engages:no",
+      "to": "failure:washer_door_lid_lock",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "failure:washer_door_lid_lock",
+      "to": "test::lock_observation",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_inlet_valve",
+      "to": "component::water_inlet_valve",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_inlet_valve",
+      "to": "system::fill",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_fill",
+      "to": "failure:washer_inlet_valve",
+      "relation": "supports",
+      "weight": 0.28,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_supply:yes",
+      "to": "failure:washer_inlet_valve",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::water_supply:no",
+      "to": "failure:washer_inlet_valve",
+      "relation": "supports",
+      "weight": 0.6,
+      "source": "evidence",
+      "contribution": 0.6
+    },
+    {
+      "from": "evidence::valve_receives_power:yes",
+      "to": "failure:washer_inlet_valve",
+      "relation": "supports",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": 0.05
+    },
+    {
+      "from": "evidence::valve_receives_power:no",
+      "to": "failure:washer_inlet_valve",
+      "relation": "supports",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": 0.3
+    },
+    {
+      "from": "failure:washer_inlet_valve",
+      "to": "test::supply_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_inlet_valve",
+      "to": "test::valve_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_pressure_system",
+      "to": "component::pressure_switch_pressure_hose",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_pressure_system",
+      "to": "system::fill",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_fill",
+      "to": "failure:washer_pressure_system",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::leaking",
+      "to": "failure:washer_pressure_system",
+      "relation": "supports",
+      "weight": 0.06,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_level_sense:yes",
+      "to": "failure:washer_pressure_system",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::water_level_sense:no",
+      "to": "failure:washer_pressure_system",
+      "relation": "supports",
+      "weight": 0.6,
+      "source": "evidence",
+      "contribution": 0.6
+    },
+    {
+      "from": "evidence::pressure_hose_blocked:yes",
+      "to": "failure:washer_pressure_system",
+      "relation": "supports",
+      "weight": 0.55,
+      "source": "evidence",
+      "contribution": 0.55
+    },
+    {
+      "from": "evidence::pressure_hose_blocked:no",
+      "to": "failure:washer_pressure_system",
+      "relation": "contradicts",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": -0.15
+    },
+    {
+      "from": "failure:washer_pressure_system",
+      "to": "test::pressure_system_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_motor",
+      "to": "component::drive_motor",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_motor",
+      "to": "system::drive",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_spin",
+      "to": "failure:washer_motor",
+      "relation": "supports",
+      "weight": 0.18,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::noise",
+      "to": "failure:washer_motor",
+      "relation": "supports",
+      "weight": 0.12,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::motor_hums:yes",
+      "to": "failure:washer_motor",
+      "relation": "supports",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": 0.3
+    },
+    {
+      "from": "evidence::motor_hums:no",
+      "to": "failure:washer_motor",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::drum_turns:yes",
+      "to": "failure:washer_motor",
+      "relation": "contradicts",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": -0.15
+    },
+    {
+      "from": "evidence::drum_turns:no",
+      "to": "failure:washer_motor",
+      "relation": "supports",
+      "weight": 0.4,
+      "source": "evidence",
+      "contribution": 0.4
+    },
+    {
+      "from": "failure:washer_motor",
+      "to": "test::motor_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_drive_belt",
+      "to": "component::drive_belt_pulley",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_drive_belt",
+      "to": "system::drive",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_spin",
+      "to": "failure:washer_drive_belt",
+      "relation": "supports",
+      "weight": 0.16,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::noise",
+      "to": "failure:washer_drive_belt",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::motor_runs:yes",
+      "to": "failure:washer_drive_belt",
+      "relation": "supports",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": 0.25
+    },
+    {
+      "from": "evidence::motor_runs:no",
+      "to": "failure:washer_drive_belt",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::drum_turns:yes",
+      "to": "failure:washer_drive_belt",
+      "relation": "contradicts",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": -0.15
+    },
+    {
+      "from": "evidence::drum_turns:no",
+      "to": "failure:washer_drive_belt",
+      "relation": "supports",
+      "weight": 0.45,
+      "source": "evidence",
+      "contribution": 0.45
+    },
+    {
+      "from": "failure:washer_drive_belt",
+      "to": "test::belt_inspection",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_shifter",
+      "to": "component::shift_actuator_shifter",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_shifter",
+      "to": "system::drive",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_spin",
+      "to": "failure:washer_shifter",
+      "relation": "supports",
+      "weight": 0.12,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::noise",
+      "to": "failure:washer_shifter",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::agitate_works:yes",
+      "to": "failure:washer_shifter",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": 0.2
+    },
+    {
+      "from": "evidence::agitate_works:no",
+      "to": "failure:washer_shifter",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::spin_works:yes",
+      "to": "failure:washer_shifter",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::spin_works:no",
+      "to": "failure:washer_shifter",
+      "relation": "supports",
+      "weight": 0.6,
+      "source": "evidence",
+      "contribution": 0.6
+    },
+    {
+      "from": "failure:washer_shifter",
+      "to": "test::actuator_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_suspension",
+      "to": "component::suspension_shock_absorbers",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_suspension",
+      "to": "system::spin",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::noise",
+      "to": "failure:washer_suspension",
+      "relation": "supports",
+      "weight": 0.18,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::leaking",
+      "to": "failure:washer_suspension",
+      "relation": "supports",
+      "weight": 0.06,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::violent_vibration:yes",
+      "to": "failure:washer_suspension",
+      "relation": "supports",
+      "weight": 0.75,
+      "source": "evidence",
+      "contribution": 0.75
+    },
+    {
+      "from": "evidence::violent_vibration:no",
+      "to": "failure:washer_suspension",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::load_balanced:yes",
+      "to": "failure:washer_suspension",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "evidence::load_balanced:no",
+      "to": "failure:washer_suspension",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": 0.2
+    },
+    {
+      "from": "failure:washer_suspension",
+      "to": "test::suspension_inspection",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_water_level_overfill",
+      "to": "component::water_level_control_inlet_valve_stuck_open",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_water_level_overfill",
+      "to": "system::fill",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::leaking",
+      "to": "failure:washer_water_level_overfill",
+      "relation": "supports",
+      "weight": 0.16,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::continues_filling:yes",
+      "to": "failure:washer_water_level_overfill",
+      "relation": "supports",
+      "weight": 0.75,
+      "source": "evidence",
+      "contribution": 0.75
+    },
+    {
+      "from": "evidence::continues_filling:no",
+      "to": "failure:washer_water_level_overfill",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::water_level_high:yes",
+      "to": "failure:washer_water_level_overfill",
+      "relation": "supports",
+      "weight": 0.5,
+      "source": "evidence",
+      "contribution": 0.5
+    },
+    {
+      "from": "evidence::water_level_high:no",
+      "to": "failure:washer_water_level_overfill",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "failure:washer_water_level_overfill",
+      "to": "test::inlet_valve_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_water_level_overfill",
+      "to": "test::pressure_system_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_drain_pump",
+      "to": "component::drain_pump_obstruction",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_drain_pump",
+      "to": "system::drain",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_drain",
+      "to": "failure:dishwasher_drain_pump",
+      "relation": "supports",
+      "weight": 0.3,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_standing:yes",
+      "to": "failure:dishwasher_drain_pump",
+      "relation": "supports",
+      "weight": 0.45,
+      "source": "evidence",
+      "contribution": 0.45
+    },
+    {
+      "from": "evidence::water_standing:no",
+      "to": "failure:dishwasher_drain_pump",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::pump_hums:yes",
+      "to": "failure:dishwasher_drain_pump",
+      "relation": "supports",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": 0.25
+    },
+    {
+      "from": "evidence::pump_hums:no",
+      "to": "failure:dishwasher_drain_pump",
+      "relation": "supports",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": 0.05
+    },
+    {
+      "from": "failure:dishwasher_drain_pump",
+      "to": "test::pump_obstruction_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_drain_pump",
+      "to": "test::drain_path_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_drain_hose",
+      "to": "component::drain_hose_air_gap_disposer_connection",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_drain_hose",
+      "to": "system::drain",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_drain",
+      "to": "failure:dishwasher_drain_hose",
+      "relation": "supports",
+      "weight": 0.18,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::leaking",
+      "to": "failure:dishwasher_drain_hose",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_standing:yes",
+      "to": "failure:dishwasher_drain_hose",
+      "relation": "supports",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": 0.25
+    },
+    {
+      "from": "evidence::water_standing:no",
+      "to": "failure:dishwasher_drain_hose",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "evidence::hose_restricted:yes",
+      "to": "failure:dishwasher_drain_hose",
+      "relation": "supports",
+      "weight": 0.65,
+      "source": "evidence",
+      "contribution": 0.65
+    },
+    {
+      "from": "evidence::hose_restricted:no",
+      "to": "failure:dishwasher_drain_hose",
+      "relation": "contradicts",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": -0.15
+    },
+    {
+      "from": "failure:dishwasher_drain_hose",
+      "to": "test::drain_path_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_circulation_pump",
+      "to": "component::circulation_pump_wash_system",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_circulation_pump",
+      "to": "system::wash",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cleaning",
+      "to": "failure:dishwasher_circulation_pump",
+      "relation": "supports",
+      "weight": 0.28,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::noise",
+      "to": "failure:dishwasher_circulation_pump",
+      "relation": "supports",
+      "weight": 0.12,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::fills:yes",
+      "to": "failure:dishwasher_circulation_pump",
+      "relation": "supports",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": 0.2
+    },
+    {
+      "from": "evidence::fills:no",
+      "to": "failure:dishwasher_circulation_pump",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::water_spray:yes",
+      "to": "failure:dishwasher_circulation_pump",
+      "relation": "contradicts",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": -0.3
+    },
+    {
+      "from": "evidence::water_spray:no",
+      "to": "failure:dishwasher_circulation_pump",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "failure:dishwasher_circulation_pump",
+      "to": "test::spray_arm_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_circulation_pump",
+      "to": "test::circulation_pump_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_inlet_valve",
+      "to": "component::water_inlet_valve_supply",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_inlet_valve",
+      "to": "system::fill",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_fill",
+      "to": "failure:dishwasher_inlet_valve",
+      "relation": "supports",
+      "weight": 0.28,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_supply:yes",
+      "to": "failure:dishwasher_inlet_valve",
+      "relation": "supports",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": 0.15
+    },
+    {
+      "from": "evidence::water_supply:no",
+      "to": "failure:dishwasher_inlet_valve",
+      "relation": "contradicts",
+      "weight": 0.65,
+      "source": "evidence",
+      "contribution": -0.65
+    },
+    {
+      "from": "evidence::inlet_valve_opens:yes",
+      "to": "failure:dishwasher_inlet_valve",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::inlet_valve_opens:no",
+      "to": "failure:dishwasher_inlet_valve",
+      "relation": "supports",
+      "weight": 0.55,
+      "source": "evidence",
+      "contribution": 0.55
+    },
+    {
+      "from": "failure:dishwasher_inlet_valve",
+      "to": "test::supply_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_inlet_valve",
+      "to": "test::valve_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_float_switch",
+      "to": "component::float_overfill_switch",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_float_switch",
+      "to": "system::fill",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_fill",
+      "to": "failure:dishwasher_float_switch",
+      "relation": "supports",
+      "weight": 0.12,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::leaking",
+      "to": "failure:dishwasher_float_switch",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::float_stuck_up:yes",
+      "to": "failure:dishwasher_float_switch",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "evidence::float_stuck_up:no",
+      "to": "failure:dishwasher_float_switch",
+      "relation": "contradicts",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": -0.15
+    },
+    {
+      "from": "evidence::fills:yes",
+      "to": "failure:dishwasher_float_switch",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "evidence::fills:no",
+      "to": "failure:dishwasher_float_switch",
+      "relation": "supports",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": 0.15
+    },
+    {
+      "from": "failure:dishwasher_float_switch",
+      "to": "test::float_inspection",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_float_switch",
+      "to": "test::switch_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_heater",
+      "to": "component::heating_element_heater_circuit",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_heater",
+      "to": "system::heat",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_drying",
+      "to": "failure:dishwasher_heater",
+      "relation": "supports",
+      "weight": 0.24,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::not_cleaning",
+      "to": "failure:dishwasher_heater",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_hot:yes",
+      "to": "failure:dishwasher_heater",
+      "relation": "contradicts",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": -0.15
+    },
+    {
+      "from": "evidence::water_hot:no",
+      "to": "failure:dishwasher_heater",
+      "relation": "supports",
+      "weight": 0.55,
+      "source": "evidence",
+      "contribution": 0.55
+    },
+    {
+      "from": "evidence::element_continuity:yes",
+      "to": "failure:dishwasher_heater",
+      "relation": "contradicts",
+      "weight": 0.2,
+      "source": "evidence",
+      "contribution": -0.2
+    },
+    {
+      "from": "evidence::element_continuity:no",
+      "to": "failure:dishwasher_heater",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "failure:dishwasher_heater",
+      "to": "test::heater_continuity",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_heater",
+      "to": "test::heater_voltage_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_thermostat",
+      "to": "component::high_limit_thermostat_temperature_sensor",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_thermostat",
+      "to": "system::heat",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_drying",
+      "to": "failure:dishwasher_thermostat",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::not_cleaning",
+      "to": "failure:dishwasher_thermostat",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_hot:yes",
+      "to": "failure:dishwasher_thermostat",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::water_hot:no",
+      "to": "failure:dishwasher_thermostat",
+      "relation": "supports",
+      "weight": 0.35,
+      "source": "evidence",
+      "contribution": 0.35
+    },
+    {
+      "from": "evidence::temperature_reading_wrong:yes",
+      "to": "failure:dishwasher_thermostat",
+      "relation": "supports",
+      "weight": 0.55,
+      "source": "evidence",
+      "contribution": 0.55
+    },
+    {
+      "from": "evidence::temperature_reading_wrong:no",
+      "to": "failure:dishwasher_thermostat",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "failure:dishwasher_thermostat",
+      "to": "test::sensor_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_thermostat",
+      "to": "test::thermostat_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_door_latch",
+      "to": "component::door_latch_door_switch",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_door_latch",
+      "to": "system::controls",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_start",
+      "to": "failure:dishwasher_door_latch",
+      "relation": "supports",
+      "weight": 0.22,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::door_latch_engages:yes",
+      "to": "failure:dishwasher_door_latch",
+      "relation": "contradicts",
+      "weight": 0.25,
+      "source": "evidence",
+      "contribution": -0.25
+    },
+    {
+      "from": "evidence::door_latch_engages:no",
+      "to": "failure:dishwasher_door_latch",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "failure:dishwasher_door_latch",
+      "to": "test::latch_observation",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_door_latch",
+      "to": "test::switch_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_control_board",
+      "to": "component::control_board_control_system",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_control_board",
+      "to": "system::controls",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::won_t_start",
+      "to": "failure:dishwasher_control_board",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "prior"
+    },
+    {
+      "from": "symptom::not_cleaning",
+      "to": "failure:dishwasher_control_board",
+      "relation": "supports",
+      "weight": 0.05,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::power_present:yes",
+      "to": "failure:dishwasher_control_board",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::power_present:no",
+      "to": "failure:dishwasher_control_board",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::latch_engages:yes",
+      "to": "failure:dishwasher_control_board",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::latch_engages:no",
+      "to": "failure:dishwasher_control_board",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "failure:dishwasher_control_board",
+      "to": "test::power_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_control_board",
+      "to": "test::control_output_test",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_spray_arm",
+      "to": "component::spray_arm_spray_path_obstruction",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_spray_arm",
+      "to": "system::wash",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cleaning",
+      "to": "failure:dishwasher_spray_arm",
+      "relation": "supports",
+      "weight": 0.18,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::water_spray:yes",
+      "to": "failure:dishwasher_spray_arm",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::water_spray:no",
+      "to": "failure:dishwasher_spray_arm",
+      "relation": "supports",
+      "weight": 0.45,
+      "source": "evidence",
+      "contribution": 0.45
+    },
+    {
+      "from": "evidence::spray_arm_blocked:yes",
+      "to": "failure:dishwasher_spray_arm",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "evidence::spray_arm_blocked:no",
+      "to": "failure:dishwasher_spray_arm",
+      "relation": "contradicts",
+      "weight": 0.15,
+      "source": "evidence",
+      "contribution": -0.15
+    },
+    {
+      "from": "failure:dishwasher_spray_arm",
+      "to": "test::spray_arm_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_leak_door_seal",
+      "to": "component::door_gasket_door_seal",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_leak_door_seal",
+      "to": "system::leak",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::leaking",
+      "to": "failure:dishwasher_leak_door_seal",
+      "relation": "supports",
+      "weight": 0.22,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::leak_at_door:yes",
+      "to": "failure:dishwasher_leak_door_seal",
+      "relation": "supports",
+      "weight": 0.7,
+      "source": "evidence",
+      "contribution": 0.7
+    },
+    {
+      "from": "evidence::leak_at_door:no",
+      "to": "failure:dishwasher_leak_door_seal",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "evidence::gasket_damaged:yes",
+      "to": "failure:dishwasher_leak_door_seal",
+      "relation": "supports",
+      "weight": 0.65,
+      "source": "evidence",
+      "contribution": 0.65
+    },
+    {
+      "from": "evidence::gasket_damaged:no",
+      "to": "failure:dishwasher_leak_door_seal",
+      "relation": "contradicts",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": -0.1
+    },
+    {
+      "from": "failure:dishwasher_leak_door_seal",
+      "to": "test::gasket_inspection",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_sump_seal",
+      "to": "component::sump_pump_seal_assembly",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_sump_seal",
+      "to": "system::leak",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::leaking",
+      "to": "failure:dishwasher_sump_seal",
+      "relation": "supports",
+      "weight": 0.16,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::leak_under_center:yes",
+      "to": "failure:dishwasher_sump_seal",
+      "relation": "supports",
+      "weight": 0.6,
+      "source": "evidence",
+      "contribution": 0.6
+    },
+    {
+      "from": "evidence::leak_under_center:no",
+      "to": "failure:dishwasher_sump_seal",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "evidence::pump_noise:yes",
+      "to": "failure:dishwasher_sump_seal",
+      "relation": "supports",
+      "weight": 0.1,
+      "source": "evidence",
+      "contribution": 0.1
+    },
+    {
+      "from": "evidence::pump_noise:no",
+      "to": "failure:dishwasher_sump_seal",
+      "relation": "contradicts",
+      "weight": 0.05,
+      "source": "evidence",
+      "contribution": -0.05
+    },
+    {
+      "from": "failure:dishwasher_sump_seal",
+      "to": "test::sump_inspection",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:common_power_supply",
+      "to": "component::household_power_supply_breaker",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:common_power_supply",
+      "to": "system::power",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::wont_start",
+      "to": "failure:common_power_supply",
+      "relation": "supports",
+      "weight": 0.12,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::voltage_present:yes",
+      "to": "failure:common_power_supply",
+      "relation": "contradicts",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": -0.3
+    },
+    {
+      "from": "evidence::voltage_present:no",
+      "to": "failure:common_power_supply",
+      "relation": "supports",
+      "weight": 0.85,
+      "source": "evidence",
+      "contribution": 0.85
+    },
+    {
+      "from": "failure:common_power_supply",
+      "to": "test::supply_voltage_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_power_supply",
+      "to": "component::household_power_supply_breaker",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:washer_power_supply",
+      "to": "system::power",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::wont_start",
+      "to": "failure:washer_power_supply",
+      "relation": "supports",
+      "weight": 0.12,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::voltage_present:yes",
+      "to": "failure:washer_power_supply",
+      "relation": "contradicts",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": -0.3
+    },
+    {
+      "from": "evidence::voltage_present:no",
+      "to": "failure:washer_power_supply",
+      "relation": "supports",
+      "weight": 0.85,
+      "source": "evidence",
+      "contribution": 0.85
+    },
+    {
+      "from": "failure:washer_power_supply",
+      "to": "test::supply_voltage_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_power_supply",
+      "to": "component::household_power_supply_breaker",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:dishwasher_power_supply",
+      "to": "system::power",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::wont_start",
+      "to": "failure:dishwasher_power_supply",
+      "relation": "supports",
+      "weight": 0.12,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::power_present:yes",
+      "to": "failure:dishwasher_power_supply",
+      "relation": "contradicts",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": -0.3
+    },
+    {
+      "from": "evidence::power_present:no",
+      "to": "failure:dishwasher_power_supply",
+      "relation": "supports",
+      "weight": 0.85,
+      "source": "evidence",
+      "contribution": 0.85
+    },
+    {
+      "from": "failure:dishwasher_power_supply",
+      "to": "test::supply_voltage_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_power_supply",
+      "to": "component::household_power_supply_outlet",
+      "relation": "has_component",
+      "weight": 1
+    },
+    {
+      "from": "failure:refrigerator_power_supply",
+      "to": "system::power",
+      "relation": "belongs_to_system",
+      "weight": 1
+    },
+    {
+      "from": "symptom::not_cooling",
+      "to": "failure:refrigerator_power_supply",
+      "relation": "supports",
+      "weight": 0.08,
+      "source": "prior"
+    },
+    {
+      "from": "evidence::power_present:yes",
+      "to": "failure:refrigerator_power_supply",
+      "relation": "contradicts",
+      "weight": 0.3,
+      "source": "evidence",
+      "contribution": -0.3
+    },
+    {
+      "from": "evidence::power_present:no",
+      "to": "failure:refrigerator_power_supply",
+      "relation": "supports",
+      "weight": 0.85,
+      "source": "evidence",
+      "contribution": 0.85
+    },
+    {
+      "from": "failure:refrigerator_power_supply",
+      "to": "test::outlet_power_check",
+      "relation": "validated_by",
+      "weight": 1
+    },
+    {
+      "from": "failure:dryer_vent_restriction",
+      "to": "failure:dryer_thermal_cutoff",
+      "relation": "can_cause_or_contribute_to",
+      "weight": 0.9,
+      "source": "causal_rule"
+    },
+    {
+      "from": "failure:dryer_vent_restriction",
+      "to": "failure:dryer_high_limit_thermostat",
+      "relation": "can_cause_or_contribute_to",
+      "weight": 0.8,
+      "source": "causal_rule"
+    },
+    {
+      "from": "failure:dryer_vent_restriction",
+      "to": "failure:dryer_cycling_thermostat",
+      "relation": "can_cause_or_contribute_to",
+      "weight": 0.65,
+      "source": "causal_rule"
+    },
+    {
+      "from": "failure:dryer_blower_wheel",
+      "to": "failure:dryer_vent_restriction",
+      "relation": "can_cause_or_contribute_to",
+      "weight": 0.45,
+      "source": "causal_rule"
+    },
+    {
+      "from": "failure:dryer_thermal_cutoff",
+      "to": "failure:dryer_heating_element",
+      "relation": "should_trigger_root_cause_check",
+      "weight": 0.75,
+      "source": "causal_rule"
+    },
+    {
+      "from": "failure:refrigerator_defrost_system",
+      "to": "failure:refrigerator_evaporator_fan",
+      "relation": "can_contribute_to",
+      "weight": 0.7,
+      "source": "causal_rule"
+    },
+    {
+      "from": "failure:refrigerator_condenser_coils",
+      "to": "failure:refrigerator_condenser_fan",
+      "relation": "can_contribute_to",
+      "weight": 0.55,
+      "source": "causal_rule"
+    },
+    {
+      "from": "failure:washer_drain_hose",
+      "to": "failure:washer_drain_pump",
+      "relation": "can_mimic_or_contribute_to",
+      "weight": 0.55,
+      "source": "causal_rule"
+    }
+  ]
+}
