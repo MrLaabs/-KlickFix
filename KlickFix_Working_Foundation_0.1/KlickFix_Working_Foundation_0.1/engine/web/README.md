@@ -1,0 +1,2 @@
+# FixIQ Customer Web Layer
+The production UI should be Next.js/React/Tailwind. This repository intentionally keeps the engine framework-neutral until Supabase/OpenAI credentials and verified content sources are connected. Required screens: landing, appliance intake, model capture/OCR, conversational diagnosis, evidence explanation, test instructions, verified parts, outcome confirmation, account/history, and technician routing.

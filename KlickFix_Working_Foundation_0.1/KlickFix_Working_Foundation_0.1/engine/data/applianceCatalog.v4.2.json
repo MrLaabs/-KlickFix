@@ -1,0 +1,7 @@
+{
+  "version":"4.2.0",
+  "status":"expanded_framework",
+  "categories":["refrigerator","washer","dryer","dishwasher","oven","microwave","water_heater","furnace"],
+  "systems":["power","control","heating","cooling","water_inlet","drain","circulation","drive","airflow","safety_interlock","sealed_system","ignition","venting"],
+  "rule":"New knowledge is scoring-authoritative only after provenance and verification are recorded. This catalog does not fabricate manufacturer-specific facts."
+}

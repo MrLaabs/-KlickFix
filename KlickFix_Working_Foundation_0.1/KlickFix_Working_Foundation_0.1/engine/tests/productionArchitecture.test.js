@@ -1,0 +1,1 @@
+const assert=require('assert');const fs=require('fs');const path=require('path');for(const f of ['db/schema.sql','src/naturalLanguageAdapter.js','src/safetyEngine.js','src/conversationEngine.js','api/server.js'])assert(fs.existsSync(path.join(__dirname,'..',f)));console.log('production architecture: PASS');
